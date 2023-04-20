@@ -4,6 +4,7 @@ import { StylesProvider } from '@material-ui/core/styles';
 
 import Landing from './components/Landing';
 import Pricing from './components/Pricing';
+import Sfe from './components/Sfe';
 
 export default () => {
   return (
@@ -12,7 +13,9 @@ export default () => {
         <BrowserRouter>
           <Switch>
             <Route exact path="/pricing" component={Pricing} />
-            <Route path="/" component={Landing} />
+            <Route exact path="/landing" component={Landing} />
+            <Route path="/" component={Sfe} />
+           
           </Switch>
         </BrowserRouter>
       </StylesProvider>
